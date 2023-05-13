@@ -30,20 +30,20 @@ for i in range(m):
 print(result)
 
 # Using bisect
-result = 0
-a_sum, b_sum = a_array, b_array
-for i in range(n):
-    for j in range(i+1, n):
-        a_sum.append(sum(a_array[i:j+1]))
-for i in range(m):
-    for j in range(i+1, m):
-        b_sum.append(sum(b_array[i:j+1]))
+# result = 0
+# a_sum, b_sum = a_array, b_array
+# for i in range(n):
+#     for j in range(i+1, n):
+#         a_sum.append(sum(a_array[i:j+1]))
+# for i in range(m):
+#     for j in range(i+1, m):
+#         b_sum.append(sum(b_array[i:j+1]))
 
-a_sum.sort(); b_sum.sort()
+# a_sum.sort(); b_sum.sort()
 
 
-for i in range(len(a_sum)):
-    l = bisect_left(b_sum, T-a_sum[i])
-    r = bisect_right(b_sum, T-a_sum[i])
-    result += r-l
-print(result)
+# for i in range(len(a_sum)):
+#     l = bisect_left(b_sum, T-a_sum[i])
+#     r = bisect_right(b_sum, T-a_sum[i])
+#     result += r-l
+# print(result)
