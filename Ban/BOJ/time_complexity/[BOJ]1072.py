@@ -1,5 +1,7 @@
 '''
     https://www.acmicpc.net/problem/1072
+
+    Binary search
 '''
 import sys; input_line = sys.stdin.readline
 import math
