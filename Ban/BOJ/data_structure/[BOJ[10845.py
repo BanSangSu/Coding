@@ -1,5 +1,7 @@
 '''
     https://www.acmicpc.net/problem/10845
+
+    Queue
 '''
 import sys; input_line = sys.stdin.readline
 from collections import deque

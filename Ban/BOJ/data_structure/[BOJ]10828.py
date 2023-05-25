@@ -1,5 +1,7 @@
 '''
     https://www.acmicpc.net/problem/10828
+
+    Stack
 '''
 import sys; input_line = sys.stdin.readline
 
