@@ -1,7 +1,7 @@
 '''
     https://www.acmicpc.net/problem/2824
 
-    Greatest Commmon Divisor
+    Greatest Common Divisor
 '''
 import sys; read_line = lambda: sys.stdin.readline().rstrip()
 
