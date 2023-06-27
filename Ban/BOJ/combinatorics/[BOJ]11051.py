@@ -1,5 +1,7 @@
 '''
     https://www.acmicpc.net/problem/11051
+
+    Dynamic Programming
 '''
 import sys; read_line = lambda: sys.stdin.readline().rstrip()
 
