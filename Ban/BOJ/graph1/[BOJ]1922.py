@@ -1,6 +1,7 @@
 '''
     https://www.acmicpc.net/problem/1922
 
+    Minimum Spanning Tree(MST)
     Kruskal Algorithm(Use Union-Find)
 '''
 import sys; read_line = lambda: sys.stdin.readline().rstrip()
