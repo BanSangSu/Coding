@@ -7,6 +7,8 @@
 '''
 import sys
 
+
+# Passed in PyPy
 def is_primising(queens_position, now):
     for i in range(now):
         if queens_position[now] == queens_position[i] or abs(queens_position[now] - queens_position[i]) == abs(now-i):
