@@ -13,10 +13,10 @@ INF = sys.maxsize
 def dijkstra_1(dist, adj, check, v):
     dist[v] = 0
     hq = []
-    heapq.heappush(hq, (v, 0))
+    heapq.heappush(hq, (0, v))
 
     while hq:
-        cur_node, cur_dist = heapq.heappop(hq)
+        cur_dist, cur_node = heapq.heappop(hq)
 
         if dist[cur_node] < cur_dist:
             continue
@@ -25,14 +25,14 @@ def dijkstra_1(dist, adj, check, v):
             distance = cur_dist + next_dist
             if distance < dist[next_node] and check[cur_node][next_node] == False:
                 dist[next_node] = distance
-                heapq.heappush(hq, (next_node, distance))
+                heapq.heappush(hq, (distance, next_node))
 
 def dijkstra_2(dist, reverse_adj, check, s, v):
     hq = []
-    heapq.heappush(hq, (v, dist[v]))
+    heapq.heappush(hq, (dist[v], v))
 
     while hq:
-        cur_node, cur_dist = heapq.heappop(hq)
+        cur_dist, cur_node = heapq.heappop(hq)
 
         if cur_node == s:
             continue
@@ -43,7 +43,7 @@ def dijkstra_2(dist, reverse_adj, check, s, v):
 
             if dist[past_node] == dist[cur_node] - past_dist:
                 check[past_node][cur_node] = True
-                heapq.heappush(hq, (past_node, dist[past_node]))
+                heapq.heappush(hq, (dist[past_node], past_node))
 
 while True:
     N, M = map(int, read_line().split())
