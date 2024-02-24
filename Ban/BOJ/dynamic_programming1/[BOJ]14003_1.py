@@ -16,3 +16,5 @@ for x in sequence:
     if not LIS or LIS[-1] < x:
         LIS.append(x)
         dp.append((len(LIS)-1, x))
+    else:
+        idx = bisect_left(LIS, x)
