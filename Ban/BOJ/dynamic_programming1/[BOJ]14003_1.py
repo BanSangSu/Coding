@@ -18,3 +18,5 @@ for x in sequence:
         dp.append((len(LIS)-1, x))
     else:
         idx = bisect_left(LIS, x)
+        LIS[idx] = x
+        
