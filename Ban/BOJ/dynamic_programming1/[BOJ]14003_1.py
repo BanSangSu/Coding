@@ -20,4 +20,5 @@ for x in sequence:
         idx = bisect_left(LIS, x)
         LIS[idx] = x
         dp.append((idx, x))
-  
+
+ans = []
