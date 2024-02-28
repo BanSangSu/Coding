@@ -22,3 +22,4 @@ for x in sequence:
         dp.append((idx, x))
 
 ans = []
+last_idx = len(LIS) - 1
