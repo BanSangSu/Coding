@@ -26,3 +26,4 @@ last_idx = len(LIS) - 1
 for i in range(len(dp)-1, -1, -1):
     if dp[i][0] == last_idx:
         ans.append(dp[i][1])
+        last_idx -= 1
