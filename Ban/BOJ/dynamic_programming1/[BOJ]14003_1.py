@@ -6,7 +6,7 @@
 import sys; read_line = lambda: sys.stdin.readline().rstrip()
 from bisect import bisect_left
 
-sys.stdin = open("data.txt", 'r')
+# sys.stdin = open("data.txt", 'r')
 
 A = int(read_line())
 sequence = list(map(int, read_line().split()))
@@ -28,3 +28,4 @@ for i in range(len(dp)-1, -1, -1):
         ans.append(dp[i][1])
         last_idx -= 1
 print(len(ans))
+print(*reversed(ans))
