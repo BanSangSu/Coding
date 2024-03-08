@@ -9,3 +9,4 @@ sys.stdin = open("data.txt", 'r')
 
 N, M = map(int, read_line().split())
 memories = [0] + list(map(int, read_line().split()))
+deativate_costs = [0] + list(map(int, read_line().split()))
